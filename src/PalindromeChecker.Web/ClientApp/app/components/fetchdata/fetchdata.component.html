@@ -1,0 +1,18 @@
+<h1>Palindrome List</h1>
+
+<p>List of existing palindrome strings enteres so far.</p>
+
+<p *ngIf="!palindromes"><em>Loading...</em></p>
+
+<table class='table' *ngIf="palindromes">
+    <thead>
+        <tr>
+            <th>Valid Palindrome String</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let palindrome of palindromes">
+            <td>{{ palindrome.name }}</td>
+        </tr>
+    </tbody>
+</table>
