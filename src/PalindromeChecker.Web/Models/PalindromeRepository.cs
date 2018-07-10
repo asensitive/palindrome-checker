@@ -7,7 +7,7 @@
 // </summary>
 // --------------------------------------------------------------------------------------------------------------------
 
-namespace PalindromeChecker.Data
+namespace PalindromeChecker.Web.Models
 {
     using System.Collections.Generic;
     using System.Linq;

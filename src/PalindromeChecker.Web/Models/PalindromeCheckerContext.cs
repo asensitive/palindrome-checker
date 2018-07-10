@@ -7,7 +7,7 @@
 // </summary>
 // --------------------------------------------------------------------------------------------------------------------
 
-namespace PalindromeChecker.Data
+namespace PalindromeChecker.Web.Models
 {
     using Microsoft.EntityFrameworkCore;
 

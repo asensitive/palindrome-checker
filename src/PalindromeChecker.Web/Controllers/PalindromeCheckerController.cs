@@ -15,7 +15,6 @@ namespace PalindromeChecker.Web.Controllers
 
     using Microsoft.AspNetCore.Mvc;
 
-    using PalindromeChecker.Data;
     using PalindromeChecker.Web.Models;
 
     /// <summary>

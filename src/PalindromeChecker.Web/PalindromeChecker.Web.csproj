@@ -28,10 +28,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\PalindromeChecker.Data\PalindromeChecker.Data.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
     <TypeScriptCompile Include="ClientApp\app\components\app\app.service.ts" />
     <TypeScriptCompile Include="ClientApp\app\palindrome.ts" />
   </ItemGroup>

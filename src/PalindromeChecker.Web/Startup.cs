@@ -16,7 +16,7 @@ namespace PalindromeChecker.Web
     using Microsoft.Extensions.Configuration;
     using Microsoft.Extensions.DependencyInjection;
 
-    using PalindromeChecker.Data;
+    using PalindromeChecker.Web.Models;
 
     /// <summary>
     /// The startup class.

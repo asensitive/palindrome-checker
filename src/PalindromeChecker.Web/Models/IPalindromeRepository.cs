@@ -1,4 +1,13 @@
-﻿namespace PalindromeChecker.Data
+﻿// --------------------------------------------------------------------------------------------------------------------
+// <copyright file="IPalindromeRepository.cs" company="HP">
+//   HP
+// </copyright>
+// <summary>
+//   Defines the IPalindromeRepository type.
+// </summary>
+// --------------------------------------------------------------------------------------------------------------------
+
+namespace PalindromeChecker.Web.Models
 {
     using System.Collections.Generic;
     using System.Threading.Tasks;

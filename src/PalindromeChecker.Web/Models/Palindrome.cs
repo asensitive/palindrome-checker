@@ -7,7 +7,7 @@
 // </summary>
 // --------------------------------------------------------------------------------------------------------------------
 
-namespace PalindromeChecker.Data
+namespace PalindromeChecker.Web.Models
 {
     /// <summary>
     /// The palindrome model.
