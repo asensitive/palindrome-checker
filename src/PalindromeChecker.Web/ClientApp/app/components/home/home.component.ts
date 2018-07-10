@@ -8,6 +8,9 @@ import { PalindromeService } from '../app/app.service';
 })
 export class HomeComponent {
 
+    isPalindrome: boolean;
+    message: string;
+
     palindrome: Palindrome = {
         id: 0,
         name: '',
@@ -20,17 +23,25 @@ export class HomeComponent {
     }
 
     check(): void {
-
         var cleanedString = this.removeNonAlphaNumerics(this.palindrome.name);
-        cleanedString = this.reverseString(cleanedString);
+        var reversedString = this.reverseString(cleanedString);
 
-        if (cleanedString !== this.palindrome.name) {
-            alert('fail');
-            return;
+        this.isPalindrome = (cleanedString === reversedString);
+
+        if (this.isPalindrome) {
+            this.message = "The string entered is a palindrome.";
+            this.save();
+        } else {
+            this.message = "The string entered is not a palindrome.";
         }
+    }
 
-        //this.palindromeService.createPalindrome(this.palindrome)
-        //    .catch(this.handleError);
+    save(): any {
+        this.palindromeService.createPalindrome(this.palindrome).catch(this.handleError);
+    }
+
+    reset(): void {
+        this.message = '';
     }
 
     private handleError(error: Response) {

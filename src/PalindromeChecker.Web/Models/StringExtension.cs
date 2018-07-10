@@ -42,7 +42,7 @@ namespace PalindromeChecker.Web.Models
         /// <returns>
         /// The <see cref="string"/>.
         /// </returns>
-        public static string RemoveNonAlphaNumerics(string input)
+        public static string RemoveNonAlphaNumerics(this string input)
         {
             var rgx = new Regex("[^a-zA-Z0-9]");
             input = rgx.Replace(input, string.Empty).ToLower();
@@ -58,7 +58,7 @@ namespace PalindromeChecker.Web.Models
         /// <returns>
         /// The <see cref="string"/>.
         /// </returns>
-        public static string ReverseString(string input)
+        public static string ReverseString(this string input)
         {
             char[] charArray = input.ToCharArray();
             Array.Reverse(charArray);

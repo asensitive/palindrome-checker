@@ -4,12 +4,31 @@
 <section class="container">
     <div class="row">
         <div class="col-md-6">
-            <div class="form-group">
-                <label>Enter string below:</label>
-                <input [(ngModel)]="palindrome.name" class="form-control" required />
+            <div class="row">
+                <div class="form-group">
+                    <form #regForm="ngForm" novalidate>
+                        <label>Enter string:</label>
+                        <textarea id="name" name="name" rows="10" class="form-control" required [(ngModel)]="palindrome.name" #name="ngModel" (ngModelChange)="reset()">
+                        </textarea>
+                        <div *ngIf="name.invalid && (name.dirty || name.touched)" class="text-danger">
+                            <div *ngIf="name.errors.required">
+                                Please enter some text.
+                            </div>
+                        </div>
+                    </form>
+                </div>
             </div>
-            <div>
-                <button (click)="check()" class="btn btn-primary" type="submit">Check</button>
+            <div class="row" *ngIf="message">
+                <div class="form-group">
+                    <label class="{{isPalindrome ? 'text-success' : 'text-danger'}}">
+                        {{message}}
+                    </label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="form-group">
+                    <button (click)="check()" class="btn btn-primary" type="submit" [disabled]="!regForm.valid">Check</button>
+                </div>
             </div>
         </div>
     </div>

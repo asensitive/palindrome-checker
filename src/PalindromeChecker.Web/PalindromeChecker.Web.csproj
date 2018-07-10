@@ -10,6 +10,7 @@
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.8" />
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.0.3" />
+    <PackageReference Include="Unity.AspNet.WebApi" Version="5.0.13" />
   </ItemGroup>
 
   <ItemGroup>
@@ -24,6 +25,10 @@
   <ItemGroup>
     <None Remove="ClientApp\app\components\app\app.service.ts" />
     <None Remove="ClientApp\app\palindrome.ts" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\PalindromeChecker.Data\PalindromeChecker.Data.csproj" />
   </ItemGroup>
 
   <ItemGroup>

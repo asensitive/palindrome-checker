@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27703.2035
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PalindromeChecker.Web", "PalindromeChecker.Web\PalindromeChecker.Web.csproj", "{BECA087C-1E27-41A7-9544-65BF1920F5A0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PalindromeChecker.Web", "PalindromeChecker.Web\PalindromeChecker.Web.csproj", "{BECA087C-1E27-41A7-9544-65BF1920F5A0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PalindromeChecker.Data", "PalindromeChecker.Data\PalindromeChecker.Data.csproj", "{CCB86F32-C6BB-4795-AEAF-14C02D71534B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PalindromeChecker.Web.Tests", "PalindromeChecker.Web.Tests\PalindromeChecker.Web.Tests.csproj", "{FA72F86C-A30D-41D5-BF3B-FC4041EE3A3A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +19,14 @@ Global
 		{BECA087C-1E27-41A7-9544-65BF1920F5A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BECA087C-1E27-41A7-9544-65BF1920F5A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BECA087C-1E27-41A7-9544-65BF1920F5A0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CCB86F32-C6BB-4795-AEAF-14C02D71534B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CCB86F32-C6BB-4795-AEAF-14C02D71534B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CCB86F32-C6BB-4795-AEAF-14C02D71534B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CCB86F32-C6BB-4795-AEAF-14C02D71534B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FA72F86C-A30D-41D5-BF3B-FC4041EE3A3A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA72F86C-A30D-41D5-BF3B-FC4041EE3A3A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA72F86C-A30D-41D5-BF3B-FC4041EE3A3A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA72F86C-A30D-41D5-BF3B-FC4041EE3A3A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

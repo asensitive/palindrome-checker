@@ -9,7 +9,7 @@ export class PalindromeService {
 
     private headers = new Headers({ 'Content-Type': 'application/json' });
 
-    private palindromesUrl = 'api/palindromes';
+    private palindromesUrl = 'api/PalindromeChecker';
 
     constructor(private http: Http) { }
 
