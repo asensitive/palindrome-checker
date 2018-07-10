@@ -1,12 +1,15 @@
 # palindrome-checker
 A .Net Core C# application that checks if a user input string is a palindrome.
 
-### Please run the following commands in PMC before running the app:
+#### Important 
+Please run the following commands in PMC before running the app:
 
 ```
 Add-Migration Initial  
 Update-Database
 ```
+
+#### Notes:
 
 * Front end is created with **Bootstrap 4** and **angular 4**.
 * The backend is a **.Net Core Web API**.
