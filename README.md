@@ -11,6 +11,7 @@ Update-Database
 
 #### Notes:
 
+* Solution created using **Visual Studio 2017**
 * Front end is created with **Bootstrap 4** and **angular 4**.
 * The backend is a **.Net Core Web API**.
 * Microsoft **Unity** is used as dependency injection tool.
